@@ -1,0 +1,27 @@
+#root, .App {
+    box-sizing: border-box;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.App-contents {
+    padding: 2em 1em;
+}
+
+.App-intro {
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    transform: translate( 0, -50% );
+    color: white;
+    font-size: large;
+    animation: opening-fadeout 2s linear;
+}
+
+@keyframes opening-fadeout {
+    0% { opacity: 1; display: block; }
+    80% { opacity: 0; }
+    100% { opacity: 0; display: none; }
+}
